@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payapi</title>
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <input class="menuCheck" type="checkbox" name="#" id="menu">
+                    <img src="./images/icons/payapi.svg" alt="payapi">
+                    <div class="navbar__menus">
+                        <hr class="navbar__menu__line">
+                        <ul class="navbar__menu">
+                            <li class="navbar__menu__item">
+                                <a class="navbar__menu__item__link" href="#">Pricing</a>
+                            </li>
+                            <li class="navbar__menu__item">
+                                <a class="navbar__menu__item__link" href="#">About</a>
+                            </li>
+                            <li class="navbar__menu__item">
+                                <a class="navbar__menu__item__link" href="#">Contact</a>
+                            </li>
+
+                            <li class="navbar__menu__item">
+                                <label class="navbar__menu__item__remove" for="menu">
+                                <img src="./images/icons/remove-btn.svg" alt="remove">
+                            </label>
+                            </li>
+                        </ul>
+                        <button class="navbar__btn main--btn">Schedule a Demo</button>
+                    </div>
+                    <label class="navbar__hamburger-bar" for="menu">
+                        <img src="./images/icons/hamburger-bar.svg" alt="hamburger-bar">
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="hero">
+                <form class="hero__left" action="https://echo.htmlacademy.ru/" method="POST">
+                    <h1 class="hero__left__title">Start building with our APIs for absolutely free.</h1>
+                    <label class="hero__left__submit submit--box">
+                        <input class="email" type="email" name="email" required placeholder="Enter email address">
+                        <button class="hero__left__submit__btn main--btn" type="submit">Schedule a Demo</button>
+                    </label>
+                    <span class="hero__left__text">Have any questions?<a class="hero__left__text__link" href="#">Contact Us</a></span>
+                </form>
+                <img class="hero__img" src="./images/iPhone-X-Mockup.png" alt="iPhone-X-Mockup">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <div class="container">
+                <div class="product">
+                    <div class="product__left">
+                        <h2 class="product__left__title">Who we work with</h2>
+                        <p class="product__left__text">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. </p>
+                        <button class="product__left__btn"> About Us</button>
+                    </div>
+                    <div class="product__icons">
+                        <div class="product__right__block"><img src="./images/icons/Tesla.svg" alt="Tesla"></div>
+                        <div class="product__right__block"><img src="./images/icons/Microsft.svg" alt="Microsft"></div>
+                        <div class="product__right__block"><img src="./images/icons/Hewlett_Packard.svg" alt="Hewlett_Packard"></div>
+                        <div class="product__right__block"><img src="./images/icons/Oracle.svg" alt="Oracle"></div>
+                        <div class="product__right__block"><img src="./images/icons/Google.svg" alt="Google"></div>
+                        <div class="product__right__block"><img src="./images/icons/Nivida.svg" alt="Nivida"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="information">
+            <div class="container">
+                <div class="info1">
+                    <div class="info1__img">
+                        <img src="./images/icons/html.svg" alt="html">
+                    </div>
+                    <div class="info1__right">
+                        <h4 class="info1__right__title">Easy to implement</h4>
+                        <p class="info1__right__text">Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
+                    </div>
+                </div>
+                <div class="info2">
+                    <div class="info2__left">
+                        <h4 class="info2__left__title">Simple UI & UX</h4>
+                        <p class="info2__left__text">Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. </p>
+                    </div>
+                    <div class="info2__right">
+                        <img class="info2__right__img1" src="./images/info-img.png" alt="iPhone-X-Mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <div class="client">
+                    <div class="client__card">
+                        <img class="client__card__icon" src="./images/icons/card1.svg" alt="Personal Finances">
+                        <h5 class="client__card__title">Personal Finances</h5>
+                        <p class="client__card__text">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
+                    </div>
+                    <div class="client__card">
+                        <img class="client__card__icon" src="./images/icons/card2.svg" alt="Banking & Coverage">
+                        <h5 class="client__card__title">Banking & Coverage</h5>
+                        <p class="client__card__text">With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts. </p>
+                    </div>
+                    <div class="client__card">
+                        <img class="client__card__icon" src="./images/icons/card3.svg" alt="Consumer Payments">
+                        <h5 class="client__card__title">Consumer Payments</h5>
+                        <p class="client__card__text">It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account. </p>
+                    </div>
+                </div>
+                <form class="sign-up" action="https://echo.htmlacademy.ru/" method="POST">
+                    <h6 class="sign-up__title">Ready to start?</h6>
+                    <label class="sign-up__submit submit--box">
+                        <input class="email" type="email" name="email" placeholder="Enter email address" required>
+                        <button class=" sign-up__submit__btn main--btn" type="submit">Schedule a Demo</button>
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__menus">
+                    <img src="./images/icons/footer-icon.svg" alt="payapi">
+                    <ul class="footer__menu">
+                        <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Pricing</a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">About</a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__icons">
+                    <img src="./images/icons/facebook.svg" alt="facebook">
+                    <img src="./images/icons/Twitter.svg" alt="Twitter">
+                    <img src="./images/icons/Shape.svg" alt="Shape">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

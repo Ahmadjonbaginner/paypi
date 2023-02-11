@@ -1,0 +1,94 @@
+.products {
+    background-color: $card-bg;
+}
+
+.product {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    @include for-tabele-only {
+        flex-direction: column-reverse;
+        row-gap: 73px;
+    }
+    &__left {
+        max-width: 445px;
+        @include for-tabele-only {
+            text-align: center;
+        }
+        &__title {
+            font-family: $font-title;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $about-color;
+            @include for-phone-only {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: $about-color;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            margin: 24px 0 32px 0;
+            @include for-phone-only {
+                line-height: 26px;
+            }
+        }
+        &__btn {
+            padding: 16px 32px 14px 32px;
+            background: none;
+            color: $about-color;
+            border: 1px solid $about-color;
+            border-radius: 24px;
+            transition: 0.5s;
+        }
+        &__btn:hover {
+            transform: scaleX(1.1);
+            border: 2px solid $about-color;
+            background-color: $about-color;
+            color: black;
+            font-weight: 700;
+        }
+    }
+}
+
+.product__icons {
+    max-width: 536px;
+    display: grid;
+    grid-column-gap: 82px;
+    grid-row-gap: 54px;
+    grid-template-areas: "block-1 block-2 block-3" "block-4 block-5 block-6";
+    @include for-grid-only {
+        grid-template-areas: "block-1 block-2" "block-3 block-4" "block-5 block-6";
+    }
+}
+
+.product__right__block:nth-child(1) {
+    grid-area: block-1;
+}
+
+.product__right__block:nth-child(2) {
+    grid-area: block-2;
+}
+
+.product__right__block:nth-child(3) {
+    grid-area: block-3;
+}
+
+.product__right__block:nth-child(4) {
+    grid-area: block-4;
+}
+
+.product__right__block:nth-child(5) {
+    grid-area: block-5;
+}
+
+.product__right__block:nth-child(6) {
+    grid-area: block-6;
+}

@@ -1,0 +1,204 @@
+header {
+    background-color: $main-bg;
+}
+
+nav {
+    padding-top: 45px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 64px;
+    align-items: center;
+    @include for-navbar-only {
+        justify-content: space-between;
+    }
+    &__btn:hover {
+        @include hover-btn ();
+    }
+}
+
+.menuCheck:checked~.navbar__menus {
+    transform: translateX(0);
+}
+
+.navbar__menus {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include for-navbar-only {
+        max-width: 300px;
+        height: 100vh;
+        padding: 95px 24px 0 24px;
+        flex-direction: column;
+        justify-content: start;
+        row-gap: 32px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        background-color: $card-bg;
+        transition: 500ms;
+    }
+}
+
+.navbar__menu__line {
+    display: none;
+    @include for-navbar-only {
+        display: block;
+        background-color: $about-color;
+        border: 1px solid $about-color;
+        opacity: 0.15;
+    }
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    @include for-navbar-only {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    &__item__link:hover {
+        @include hover-navbar();
+    }
+}
+
+.navbar__menu__item__link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $main-color;
+    opacity: 0.7;
+    @include for-navbar-only {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $about-color;
+        opacity: 0.7
+    }
+}
+
+.menuCheck[type="checkbox"],
+.navbar__menu__item__remove,
+.navbar__hamburger-bar {
+    display: none;
+}
+
+.navbar__menu__item__remove {
+    @include for-navbar-only {
+        display: block;
+        position: absolute;
+        top: 48px;
+        right: 27px;
+    }
+}
+
+.navbar__hamburger-bar {
+    display: none;
+    @include for-navbar-only {
+        display: block;
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 0;
+    @include for-tabele-only {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__img {
+        width: 263px;
+        height: 500px;
+        border-radius: 30px;
+    }
+    &__left {
+        padding-top: 83px;
+        max-width: 546px;
+        @include for-tabele-only {
+            max-width: 570px;
+            text-align: center;
+            padding-top: 48px;
+        }
+        &__title {
+            font-family: $font-title;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 72px;
+            letter-spacing: -0.553846px;
+            color: $main-color;
+            @include for-tabele-only {
+                font-size: 48px;
+                line-height: 58px;
+            }
+            @include for-phone-only {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+        &__submit__btn {
+            position: absolute;
+            right: 2px;
+            top: -12px;
+            @include for-phone-only {
+                position: relative;
+                width: 327px;
+                top: 16px;
+            }
+        }
+        &__text {
+            display: block;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #6C8294;
+            margin: 16px 0 0 26px;
+            @include for-phone-only {
+                margin-top: 24px;
+            }
+            &__link {
+                color: #43505a;
+            }
+        }
+    }
+}
+
+.submit--box {
+    position: relative;
+}
+
+.main--btn {
+    padding: 16px 24px 14px 26px;
+    background-color: $btn-bg;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: $btn-bg;
+    color: $about-color;
+    cursor: pointer;
+}
+
+.main--btn:hover {
+    @include hover-btn ();
+}
+
+.email {
+    width: 445px;
+    height: 48px;
+    background: $about-color;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    padding-left: 27px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $main-color;
+    opacity: 0.5;
+    margin-top: 21px;
+    @include for-phone-only {
+        width: 327px;
+    }
+}

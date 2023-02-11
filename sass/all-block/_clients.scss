@@ -1,0 +1,70 @@
+.clients {
+    padding-bottom: 96px;
+}
+
+.client {
+    display: flex;
+    justify-content: space-between;
+    @include for-phone-only {
+        flex-direction: column;
+        row-gap: 48px;
+        align-items: center;
+    }
+    &__card {
+        max-width: 350px;
+        text-align: center;
+        &__title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.138462px;
+            color: $main-color;
+            margin: 32px 0 16px 0;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: #6C8294;
+        }
+    }
+}
+
+.sign-up {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-tabele-only {
+        flex-direction: column;
+    }
+    &__title {
+        font-family: $font-title;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $main-color;
+        @include for-phone-only {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    &__submit {
+        @include for-phone-only {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__submit__btn {
+        position: absolute;
+        right: 0;
+        top: 22px;
+        @include for-phone-only {
+            position: relative;
+            width: 327px;
+            top: 16px;
+        }
+    }
+}

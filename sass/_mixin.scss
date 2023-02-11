@@ -1,0 +1,36 @@
+@mixin for-tabele-only {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-phone-only {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin for-navbar-only {
+    @media(max-width: 655px) {
+        @content;
+    }
+}
+
+@mixin for-grid-only {
+    @media(max-width: 630px) {
+        @content;
+    }
+}
+
+@mixin hover-btn {
+    background-color: #fff;
+    border: 3px solid $btn-bg;
+    color: $btn-bg;
+    transition: .2s;
+}
+
+@mixin hover-navbar {
+    color: black;
+    opacity: 1;
+    font-size: 16px;
+}
